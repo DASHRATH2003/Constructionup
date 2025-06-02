@@ -1,25 +1,23 @@
-import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
-import '../styles/Footer.css';
+import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+import "../styles/Footer.css";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
     <footer className="footer">
-     
-
       <div className="footer-main">
         <div className="container">
           <div className="footer-container">
             <div className="footer-section">
               <h3>About Us</h3>
               <div className="footer-divider"></div>
-              <p>COBRIXA Construction is a premier luxury construction firm specializing in high-end residential and commercial projects.</p>
-              <Link
-                to="/about"
-                className="footer-more-link"
-              >
+              <p>
+                COBRIXA Construction is a premier luxury construction firm
+                specializing in high-end residential and commercial projects.
+              </p>
+              <Link to="/about" className="footer-more-link">
                 Learn More <i className="fas fa-arrow-right"></i>
               </Link>
             </div>
@@ -45,7 +43,8 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link to="/services#architecture">
-                    <i className="fas fa-angle-right"></i> Architecture & Planning
+                    <i className="fas fa-angle-right"></i> Architecture &
+                    Planning
                   </Link>
                 </li>
                 <li>
@@ -60,7 +59,11 @@ const Footer = () => {
               <h3>Quick Links</h3>
               <div className="footer-divider"></div>
               <ul className="footer-links">
-                <li><Link to="/"><i className="fas fa-angle-right"></i> Home</Link></li>
+                <li>
+                  <Link to="/">
+                    <i className="fas fa-angle-right"></i> Home
+                  </Link>
+                </li>
                 <li>
                   <Link to="/about">
                     <i className="fas fa-angle-right"></i> About Us
@@ -71,8 +74,16 @@ const Footer = () => {
                     <i className="fas fa-angle-right"></i> Projects
                   </Link>
                 </li>
-                <li><Link to="/gallery"><i className="fas fa-angle-right"></i> Gallery</Link></li>
-                <li><Link to="/contact"><i className="fas fa-angle-right"></i> Contact</Link></li>
+                <li>
+                  <Link to="/gallery">
+                    <i className="fas fa-angle-right"></i> Gallery
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/contact">
+                    <i className="fas fa-angle-right"></i> Contact
+                  </Link>
+                </li>
               </ul>
             </div>
 
@@ -85,7 +96,9 @@ const Footer = () => {
                     <i className="fas fa-map-marker-alt"></i>
                   </div>
                   <div className="contact-text">
-                    <p>123 Construction Way, Building City, BC 12345</p>
+                    <p>
+                      VJJF+87W Bengaluru, Karnataka 12°52'51.1"N 77°37'23.6"E
+                    </p>
                   </div>
                 </div>
 
@@ -94,7 +107,7 @@ const Footer = () => {
                     <i className="fas fa-phone"></i>
                   </div>
                   <div className="contact-text">
-                    <p>(555) 123-4567</p>
+                    <p>+91 87627 85555</p>
                   </div>
                 </div>
 
@@ -106,8 +119,6 @@ const Footer = () => {
                     <p>info@cobrixa.com</p>
                   </div>
                 </div>
-
-
               </div>
             </div>
           </div>
@@ -117,7 +128,9 @@ const Footer = () => {
       <div className="footer-bottom">
         <div className="container">
           <p>&copy; {currentYear} COBRIXA Construction. All Rights Reserved.</p>
-          <p>Designed with <i className="fas fa-heart"></i> for Innomatrics tech</p>
+          <p>
+            Designed with <i className="fas fa-heart"></i> for Innomatrics tech
+          </p>
         </div>
       </div>
     </footer>
@@ -125,6 +138,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
-
-
